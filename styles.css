@@ -101,7 +101,13 @@ body {
         background-image: none;
     }
 
+    .page {
+        display: flex;
+        height: 100%;
+    }
+
     .logo-container {
+        padding-top: 1.25rem;
         margin-left: 0px;
         margin-right: 0px;
         width: 10rem;
@@ -113,23 +119,69 @@ body {
         height: 4px;
     }
 
+    .main-content, .countdown-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
     .main-content {
-        padding-left: 5%;
-        width: 45%;
-        float: left;
+        flex: 1 0 0px;
         text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .countdown-container {
-        width: 50%;
-        float: left;
-        height: 100%;
+        flex: 1 0 0px;
         background-image: url("img/one_page_construction_rechtes_bild.jpg");
         background-size: cover;
         background-position: 50% 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .countdown {
-        padding-top: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    .countdown .date {
+        margin-top: 0px;
+    }
+
+    .address {
+        padding-bottom: 1.25rem;
+    }
+}
+
+@media (min-width: 1000px) { 
+
+    .main-text {
+        background-image: url("img/icons-round-arrow-right-new.svg");
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        background-size: auto 70%;
+        padding-right: 3rem;
+    }
+
+}
+
+@media (min-width: 1250px) { 
+    html {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1500px) { 
+    html {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1750px) { 
+    html {
+        font-size: 1.75rem;
     }
 }
