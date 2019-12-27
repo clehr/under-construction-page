@@ -20,12 +20,19 @@ body {
     width: 15.5rem;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5px;
-    border-bottom: 8px solid;
 }
 
 .logo {
     width: 100%;
+}
+
+.logo-container::after {
+    content: "";
+    display: block;
+    margin-top: 0.3rem;
+    width: 100%;
+    height: 8px;
+    background-color: #f0f0f0;
 }
 
 .main-content {
@@ -98,6 +105,12 @@ body {
         margin-left: 0px;
         margin-right: 0px;
         width: 10rem;
+    }
+
+    .logo-container::after {
+        background-color: transparent;
+        background: linear-gradient(to right,  #36d5ed, #46e65d);
+        height: 4px;
     }
 
     .main-content {
